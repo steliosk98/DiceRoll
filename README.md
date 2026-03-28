@@ -38,37 +38,3 @@ npm run build
 
 The production files are generated in `dist/`.
 
-## Deploy To GitHub Pages
-
-This project is configured for the repository:
-
-- GitHub user: `steliosk98`
-- Repository: `DiceRoll`
-- Pages URL: `https://steliosk98.github.io/DiceRoll/`
-
-The Vite base path is already set for GitHub Pages, and the repo now includes a GitHub Actions workflow for automatic deployment.
-
-### One-time setup
-
-1. Push this project to the `DiceRoll` GitHub repository.
-2. Push your changes to the `main` branch.
-
-### GitHub Pages settings
-
-In your GitHub repository:
-
-1. Go to `Settings`
-2. Open `Pages`
-3. Under `Build and deployment`, set:
-   Source: `GitHub Actions`
-4. Save
-
-After that, GitHub Pages should serve the site at:
-
-`https://steliosk98.github.io/DiceRoll/`
-
-### How deployment works
-
-- Every push to `main` triggers the workflow in `.github/workflows/deploy.yml`
-- GitHub Actions installs dependencies, builds the Vite app, and publishes `dist/` to GitHub Pages
-- You can also run the workflow manually from the `Actions` tab using `workflow_dispatch`
