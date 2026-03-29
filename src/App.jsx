@@ -141,7 +141,7 @@ export default function App() {
     <main className="app">
       <section className="hero">
         <p className="eyebrow">Simple Dice Roller</p>
-        <h1>Pick the dice, click the table, read the result.</h1>
+        <h1>Roll the dice, read the result.</h1>
         <p className="intro">
           Each die shows all of its faces, spins during the roll, then settles with a clear
           2D top-face result.
